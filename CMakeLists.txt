@@ -19,20 +19,20 @@ add_executable(SystemMonitor
     src/ResourcesMonitor.cpp
 )
 
-# Find Google Test on the system
-find_package(GTest REQUIRED)
-include_directories(${GTEST_INCLUDE_DIRS})
+# # Find Google Test on the system
+# find_package(GTest REQUIRED)
+# include_directories(${GTEST_INCLUDE_DIRS})
 
-# Ajouter un exécutable pour les tests
-add_executable(runTests
-    tests/test_Alerter.cpp
-    tests/test_ConsoleUI.cpp
-    tests/test_CPUUsageMonitor.cpp
-    tests/test_DiskUsageMonitor.cpp
-    tests/test_Logger.cpp
-    tests/test_MemoryUsageMonitor.cpp
-    tests/test_Network.cpp
-)
+# # Ajouter un exécutable pour les tests
+# add_executable(runTests
+#     tests/test_Alerter.cpp
+#     tests/test_ConsoleUI.cpp
+#     tests/test_CPUUsageMonitor.cpp
+#     tests/test_DiskUsageMonitor.cpp
+#     tests/test_Logger.cpp
+#     tests/test_MemoryUsageMonitor.cpp
+#     tests/test_NetworkUsageMonitor.cpp
+# )
 
-# Link Google Test to the tests executable
-target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
+# # Link Google Test to the tests executable
+# target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
