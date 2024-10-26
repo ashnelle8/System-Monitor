@@ -27,6 +27,9 @@ include_directories(${GTEST_INCLUDE_DIRS})
 add_executable(runTests
     src/ConsoleUI.cpp
     src/CPUUsageMonitor.cpp
+    src/DiskUsageMonitor.cpp
+    src/MemoryUsageMonitor.cpp
+    src/NetworkUsageMonitor.cpp
     tests/test_Alerter.cpp
     tests/test_ConsoleUI.cpp
     tests/test_CPUUsageMonitor.cpp

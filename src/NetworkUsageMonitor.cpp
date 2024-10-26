@@ -4,6 +4,11 @@ NetworkUsageMonitor::NetworkUsageMonitor(/* args */)
 {
 }
 
+float NetworkUsageMonitor::getUsage()
+{
+    return (0);
+}
+
 NetworkUsageMonitor::~NetworkUsageMonitor()
 {
 }

@@ -5,5 +5,6 @@ private:
 public:
     NetworkUsageMonitor();
     ~NetworkUsageMonitor();
+    float getUsage();
 };
 
