@@ -2,5 +2,10 @@
 #include "../include/CPUUsageMonitor.hpp"
 
 TEST(CPUUsageMonitorTest, TestGetUsage) {
-    
+
+    CPUUsageMonitor cpu;
+
+    std::cout << "lol";
+
+    EXPECT_TRUE(cpu.getUsage() > 0.0);
 }

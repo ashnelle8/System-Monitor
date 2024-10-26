@@ -1,13 +1,16 @@
 #ifndef CONSOLEUI_HPP
 #define CONSOLEUI_HPP
 
-class consoleUI
+#include <string>
+#include <iostream>
+
+class ConsoleUI
 {
 private:
     /* data */
 public:
-    consoleUI(/* args */);
-    ~consoleUI();
+    ConsoleUI(/* args */);
+    ~ConsoleUI();
     void displayUsage(float cpu, float memory, float disk, float network);
 };
 
