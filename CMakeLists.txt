@@ -23,8 +23,10 @@ add_executable(SystemMonitor
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-# Ajouter un exécutable pour les tests
+# Add an executable for testing
 add_executable(runTests
+    src/ConsoleUI.cpp
+    src/CPUUsageMonitor.cpp
     tests/test_Alerter.cpp
     tests/test_ConsoleUI.cpp
     tests/test_CPUUsageMonitor.cpp
