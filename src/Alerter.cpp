@@ -4,7 +4,7 @@ Alerter::Alerter()
 {
 }
 
-void Alerter::checkThresholds(float cpuUsage, float memoryUsage)
+void Alerter::checkThresholds(float cpuUsage, float diskUsage, float memoryUsage, float networkUsage)
 {
 
 }

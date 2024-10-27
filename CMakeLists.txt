@@ -25,6 +25,7 @@ include_directories(${GTEST_INCLUDE_DIRS})
 
 # Add an executable for testing
 add_executable(runTests
+    src/Alerter.cpp
     src/ConsoleUI.cpp
     src/CPUUsageMonitor.cpp
     src/DiskUsageMonitor.cpp

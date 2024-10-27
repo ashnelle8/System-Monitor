@@ -4,7 +4,7 @@ private:
     /* data */
 public:
     Alerter();
-    void checkThresholds(float cpuUsage, float memoryUsage);
+    void checkThresholds(float cpuUsage, float diskUsage, float memoryUsage, float networkUsage);
     ~Alerter();
 };
 
