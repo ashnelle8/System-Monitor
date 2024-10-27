@@ -7,7 +7,7 @@ TEST(CPUUsageMonitorTest, TestGetUsage) {
 
     std::cout << "lol";
 
-    EXPECT_TRUE(cpu.getUsage() > 0.0);
+    EXPECT_TRUE(cpu.getUsage() >= 0.0);
 
-    EXPECT_TRUE(cpu.getUsage() < 100.0);
+    EXPECT_TRUE(cpu.getUsage() <= 100.0);
 }

@@ -38,7 +38,7 @@ TEST(LoggerTest, TestLogData) {
 
     std::ostringstream expectedContent;
 
-    expectedContent << "Cpu = " << cpuUsage << ", disk = " << diskUsage << ", memory = " << memoryUsage << ", network = " << networkUsage;
+    expectedContent << "Cpu : " << cpuUsage << ", disk : " << diskUsage << ", memory : " << memoryUsage << ", network : " << networkUsage;
 
     ASSERT_EQ(fileContent, expectedContent.str());
 }

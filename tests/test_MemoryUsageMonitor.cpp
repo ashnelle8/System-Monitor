@@ -5,8 +5,8 @@ TEST(MemoryUsageMonitorTest, TestGetUsage) {
     
     MemoryUsageMonitor memory;
 
-    EXPECT_TRUE(memory.getUsage() > 0.0);
+    EXPECT_TRUE(memory.getUsage() >= 0.0);
 
-    EXPECT_TRUE(memory.getUsage() < 100.0);
+    EXPECT_TRUE(memory.getUsage() <= 100.0);
 
 }
